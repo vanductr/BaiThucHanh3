@@ -3,12 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form thông tin</title>
   </head>
   <body>
-    <form method="get" action="https://www.google.com.vn/search?">
-      <input type="text" name="q" />
-      <input type="submit" value="Tìm kiếm" />
+    <h1>
+      Tạo form mô tả cảm xúc của bạn về <br />
+      tấm ảnh tâm đắc nhất của mình
+    </h1>
+    <form action="#" method="post">
+      <label for="name">Họ và Tên:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <br />
+      <label for="subject">Chủ đề:</label>
+      <input type="text" id="subject" name="subject" required />
+      <br />
+      <br />
+      <label for="image">Img:</label>
+      <input type="file" id="image" name="image" required />
+      <br />
+      <br />
+      <label for="message">Nội dung:</label>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <br />
+      <br />
+      <input type="submit" value="Gửi" />
+    </form>
+    <hr width="80%" align="left" />
+    <hr width="80%" align="left" />
+    <hr width="80%" align="left" />
+    <h1>Đăng kí tài khoản</h1>
+    <form action="#" method="post">
+      <label for="username">Tên đăng nhập:</label>
+      <input type="text" id="username" name="username" required /><br />
+
+      <label for="password">Mật khẩu:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="8"
+        required
+      /><br />
+
+      <label for="confirm_password">Xác nhận mật khẩu:</label>
+      <input
+        type="password"
+        id="confirm_password"
+        name="confirm_password"
+        minlength="8"
+        required
+      /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="gender">Giới tính:</label>
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Nam</label>
+      <input type="radio" id="female" name="gender" value="female" required />
+      <label for="female">Nữ</label><br />
+
+      <input type="submit" value="Đăng ký" />
+    </form>
+    <hr width="80%" align="left" />
+    <hr width="80%" align="left" />
+    <hr width="80%" align="left" />
+    <h1>Liên hệ</h1>
+    <form method="”POST”" action="”#”">
+      <label for="fullname">Họ và tên:</label>
+      <input type="text" id="fullname" name="fullname" /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br />
+
+      <label for="phone">Số điện thoại:</label>
+      <input type="tel" id="phone" name="phone" /><br />
+      <label for="subject">Chủ đề:</label>
+      <select id="subject" name="subject">
+        <option value="general">Tổng quan</option>
+        <option value="sales">Bán hàng</option>
+        <option value="support">Hỗ trợ</option>
+        <option value="partnership">Đối tác</option></select
+      ><br />
+      <label for="message">Nội dung</label>
+      <textarea id="message" name="message" rows="5"></textarea><br />
+
+      <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+      <label for="newsletter">Nhận thông tin từ chúng tôi</label><br />
+
+      <input type="submit" value="Gửi" />
     </form>
   </body>
 </html>
